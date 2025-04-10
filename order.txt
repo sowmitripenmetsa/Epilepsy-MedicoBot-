@@ -1,0 +1,7 @@
+file_reader.py - reads files in txt and pdf 
+chunking.py - chunks all documents logical chunking
+database.py - stores the chunks in postgres
+embedding.py - convert chunks into embeddings
+faiss_store.py - stores embeddings in faiss
+retriver.py - retrieves the datafrom faiss
+prompts.py - using prompts to give accurate response
