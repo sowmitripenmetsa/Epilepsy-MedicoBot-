@@ -4,7 +4,7 @@ from file_reader import FileReader
 from chunking import Chunker
 
 class PostgresChunkStore:
-    def __init__(self, dbname="postgres", user="postgres", password="123456", host="localhost", port=5432):
+    def __init__(self, dbname="postgres", user="postgres", password="xxxx(your pwd)", host="localhost", port=5432):
         self.conn = psycopg2.connect(
             dbname=dbname, user=user, password=password, host=host, port=port
         )
@@ -46,7 +46,7 @@ class PostgresChunkStore:
 
 if __name__ == "__main__":
 
-    reader = FileReader("/home/akshaya/Documents/medicobot/eeg_data")
+    reader = FileReader("file_path")
     data = reader.read_all_files()
 
     chunker = Chunker()
